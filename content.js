@@ -1,9 +1,10 @@
 console.log('Extension running');
 
 // Function to remove the ClassifiedDetail--blurContent class from div elements
+
 function removeBlurContentClass() {
-    // Get all div elements with the specified class names
-    var divs = document.querySelectorAll('.wrap-content.ClassifiedDetail.ClassifiedDetail--blurContent.cf');
+    // Get all div elements with the updated class names (removed .cf)
+    var divs = document.querySelectorAll('.wrap-content.ClassifiedDetail.ClassifiedDetail--blurContent');
     console.log(divs);
 
     // Loop over the div elements
