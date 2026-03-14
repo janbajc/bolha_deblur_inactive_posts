@@ -1,15 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "Bolha deblurer",
-    "version": "1.0",
-    "permissions": [
-        "activeTab"
-    ],
+    "name": "Bolha Deblur",
+    "version": "1.1",
+    "host_permissions": ["https://*.bolha.com/*"],
     "content_scripts": [
         {
-            "matches": ["https://www.bolha.com/*"],
+            "matches": ["https://*.bolha.com/*"],
             "js": ["content.js"],
-			"run_at": "document_end"
+            "run_at": "document_end"
         }
     ]
 }
